@@ -7,4 +7,4 @@
 
 ///
 @_exported import ReferenceType
-@_exported import XCTestTestToolkit
+@_exported import ProperValueTypeTestToolkit

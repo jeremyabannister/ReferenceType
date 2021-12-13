@@ -19,10 +19,6 @@ let package = Package(
             url: "https://github.com/jeremyabannister/ProperValueType",
             from: "0.1.0"
         ),
-        .package(
-            url: "https://github.com/jeremyabannister/XCTestTestToolkit",
-            from: "0.1.0"
-        ),
     ],
     targets: [
         .target(
@@ -33,7 +29,7 @@ let package = Package(
             name: "ReferenceTypeTestToolkit",
             dependencies: [
                 "ReferenceType",
-                "XCTestTestToolkit"
+                .product(name: "ProperValueTypeTestToolkit", package: "ProperValueType")
             ]
         ),
         .testTarget(
